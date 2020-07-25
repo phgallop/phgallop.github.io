@@ -53,6 +53,11 @@
                         .cls-5 {
                         fill:#8bff94;
                         }
+                        .cls-6 {
+                          font-size:43px;
+                          font-family:Poppins-Bold, Poppins;
+                          font-weight:700;
+                          }
                 </defs>
                 <title>research</title>
 
@@ -71,7 +76,16 @@
                 <g id="Camada_2" data-name="Camada 2" class="hide">
                    <text class="cls-6" transform="translate(104.4 148.38)">USER EXPERIENCE</text>
                 </g>
+                <g id="Camada_6" data-name="Camada 2">
+                  <text class="cls-6 hide" transform="translate(48.69 85.38)" id="ux">UX</text>
+                  <text class="cls-6 hide" transform="translate(48.69 169.38)" id="design">DESIGN</text>
+                  <text class="cls-6 hide" transform="translate(465.69 169.38)" id="3d">3D</text>
+                  <text class="cls-6 hide" transform="translate(228.28 85.38)" id="illustration">ILLUSTRATION</text>
+               </g>
              </svg>
+            </defs>
+
+
         </main>
         <!-- FOOTER --> 
         <footer class="page-footer grey darken-3">
@@ -101,16 +115,30 @@
         <script src="../phgallop.github.io/jquery-3.5.1.min.js"></script>   
         <script src="../phgallop.github.io/materialize.js"></script>            
         <script>
-            etapa1 = false
-            function toggle(){
+             function toggleMenu(){
+                setTimeout(function async(){$('#ux').toggleClass('hide');},500)
+                setTimeout(function async(){$('#illustration').toggleClass('hide');},1000)
+                setTimeout(function async(){$('#3d').toggleClass('hide');},1500)
+                setTimeout(function async(){$('#design').toggleClass('hide');},2000)
+            }
+            function toggle2(){
                 setTimeout(function async(){$('#Camada_5').toggleClass('hide');},500)
                 setTimeout(function async(){$('#Camada_4').toggleClass('hide');},1000)
                 setTimeout(function async(){$('#Camada_3').toggleClass('hide');},1500)
                 setTimeout(function async(){$('#Camada_1').toggleClass('hide');},2000)
                 setTimeout(function async(){$('#Camada_2').toggleClass('hide');},2500)
             }
-
+            function toggle(){
+                setTimeout(function async(){$('#Camada_5').toggleClass('hide');},500)
+                setTimeout(function async(){$('#Camada_4').toggleClass('hide');},1000)
+                setTimeout(function async(){$('#Camada_3').toggleClass('hide');},1500)
+                setTimeout(function async(){$('#Camada_1').toggleClass('hide');},2000)
+                setTimeout(function async(){$('#Camada_2').toggleClass('hide');},2500)
+                setTimeout(() => {    toggle2();; }, 1500);       
+                setTimeout(() => {    toggleMenu();; }, 4000);       
+            }
             toggle()
+            
         </script>    
     </body>
 </html>
