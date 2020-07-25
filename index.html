@@ -3,9 +3,7 @@
     <head>
         <!-- Compiled and minified CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-        <!-- Compiled and minified JavaScript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>          
-        
+        <!-- Compiled and minified JavaScript -->   
         <style>
             body{
                 display: flex;
@@ -16,9 +14,11 @@
             main{
                 flex: 1 0 auto;
             }
-      
+            .parallax-container {
+                height: 300px;
+            }
+ 
         </style>
-        
     </head>
     <body>
         <!-- HEADER -->
@@ -41,7 +41,54 @@
           </ul>
         </header>
         <main>
-            teste
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 631 236">
+                <defs>
+                    <style>.cls-1 {
+                        fill:#ff006b;
+                        }
+                        
+                        .cls-2,.cls-3,.cls-4,.cls-5,.cls-6 {
+                        font-size:43px;
+                        font-family:Poppins-Bold, Poppins;
+                        font-weight:700;
+                        }
+                        
+                        .cls-2 {
+                        fill:#f4f40c;
+                        }
+                        
+                        .cls-3 {
+                        fill:#2ea3ff;
+                        }
+                        
+                        .cls-4 {
+                        fill:#fff;
+                        }
+                        
+                        .cls-5 {
+                        fill:#8bff94;
+                        }
+                </defs>
+                <title>research</title>
+                <g id="Camada_6" data-name="Camada 6">
+                    <rect class="cls-1" width="100%" height="236">
+                </g>
+                <g id="Camada_5" data-name="Camada 5" class="hide">
+                   <text class="cls-2" transform="translate(79.4 102.38)">USER EXPERIENCE</text>
+                </g>
+                <g id="Camada_4" data-name="Camada 4" class="hide">
+                   <text class="cls-3" transform="translate(83.4 113.38)">USER EXPERIENCE</text>
+                </g>
+                <g id="Camada_3" data-name="Camada 3" class="hide">
+                   <text class="cls-4" transform="translate(90.4 120.38)">USER EXPERIENCE</text>
+                </g>
+                <g id="Camada_1" data-name="Camada 1" class="hide">
+                   <text class="cls-5" transform="translate(97.4 135.38)">USER EXPERIENCE</text>
+                </g>
+                <g id="Camada_2" data-name="Camada 2" class="hide">
+                   <text class="cls-6" transform="translate(104.4 148.38)">USER EXPERIENCE</text>
+                </g>
+             </svg>
         </main>
         <!-- FOOTER --> 
         <footer class="page-footer">
@@ -68,6 +115,26 @@
               <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
               </div>
             </div>
-          </footer>         
+          </footer>     
+        <script src="../phgallop.github.io/jquery-3.5.1.min.js"></script>   
+        <script src="../phgallop.github.io/materialize.js"></script>            
+        <script>
+
+            setTimeout(function async(){
+                $('#Camada_5').toggleClass('hide');
+            },1000)
+            setTimeout(function async(){
+                $('#Camada_4').toggleClass('hide');
+            },2000)
+            setTimeout(function async(){
+                $('#Camada_3').toggleClass('hide');
+            },3000)
+            setTimeout(function async(){
+                $('#Camada_1').toggleClass('hide');
+            },4000)
+            setTimeout(function async(){
+                $('#Camada_2').toggleClass('hide');
+            },5000)
+        </script>    
     </body>
 </html>
